@@ -13,6 +13,7 @@ ENV DEFAULT_KERNEL_NAME=ir
 RUN sudo Rscript -e "install.packages('remotes', repos='http://cran.rstudio.com/')"
 RUN sudo Rscript -e "remotes::install_github('UCLATALL/coursekata-r')"
 RUN sudo Rscript -e "coursekata::coursekata_install()"
+RUN sudo Rscript -e "remotes::install_github('UCLATALL/supernova')"
 
 # Fix plot sizes
 RUN sudo Rscript -e "install.packages('repr', repos='http://cran.rstudio.com/')"
