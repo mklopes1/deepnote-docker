@@ -22,3 +22,4 @@ RUN echo 'options(repr.plot.width = 4, repr.plot.height = 4)' > ~/.Rprofile
 # Install other packages
 RUN sudo Rscript -e "install.packages(c('psych', 'simstudy'), repos='http://cran.rstudio.com/')"
 RUN sudo Rscript -e "install.packages(c('lme4'), repos='http://cran.rstudio.com/')"
+RUN sudo Rscript -e "install.packages(c('car'), repos='http://cran.rstudio.com/')"
